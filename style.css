@@ -1,0 +1,70 @@
+body {
+    background-color: gold;
+}
+
+.game {
+    max-width: 100%;
+    width: 450px;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .game {
+        width: 327px;
+    }
+}
+
+.game .title {
+    color: white;
+    background-color: #370686;
+    padding: 8px 0;
+    margin: 8px 0;
+    font-size: 30px;
+    font-family: 'Finger Paint', cursive;
+}
+
+.game .title span {
+    color: gold;
+    font-weight: bold;
+}
+
+.game .square {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: rgb(133, 79, 187);
+    float: left;
+    border: 3px solid rgb(90, 44, 136);
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Finger Paint', cursive;
+}
+
+@media (max-width: 767px) {
+    .game .square {
+        width: 109px;
+        height: 109px;
+    }
+}
+
+.game .square:hover {
+    background-color: #370686;
+    cursor: pointer;
+}
+
+.game p {
+    color: #370686;
+    font-weight: bold;
+    font-size: 17px;
+}
